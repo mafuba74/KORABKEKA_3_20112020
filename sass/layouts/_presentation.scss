@@ -1,0 +1,65 @@
+
+.restorants{
+    /* ===== style de la section restaurants de la page d'acceuil ====== */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px 0;
+    background-color: whitesmoke;
+
+   
+    &__list{
+        /* ===== agencement de la liste de restorants cards ====== */ 
+        padding: 0;
+        list-style-type: none;
+    }
+
+
+    &__card{
+        /* ===== style des restorants cards ======*/
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 90%;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0 0 18px 3px #D2CDD3;
+        margin: 30px auto;
+        & figure{
+            margin: 0;
+        }
+ 
+
+        &--view{
+            /* ===== style de la partie image de la card ===== */
+            display: flex;
+            width: 100%;
+            height: 200px;
+            padding: 0;
+        }
+
+
+        &--info{
+            /* ===== style de la partie descriptive de la card ==== */
+            display: flex;
+
+
+            &--text{
+                /* ===== style du bloc texte de la card ===== */
+                width: 80%;
+                padding-left: 20px;
+            }
+
+
+            &--like{
+                /* ===== style du bloc contenant le logo like (coeur) de la card ==== */
+                display: block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.5em;
+                width: 20%;
+            }
+        }
+    }
+}

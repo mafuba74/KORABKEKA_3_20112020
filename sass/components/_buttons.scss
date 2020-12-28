@@ -1,0 +1,24 @@
+.section-intro__localise__button{
+    /*==== bouton avec le logo map de la bannière localisation*/
+    border: none;
+    background-color: transparent;
+}
+
+
+.button--pink{
+    /*===== bouton rose dégradé =====*/
+    width: 200px;
+        height: 50px;
+        margin: 20px auto;
+        background: $gradient1;
+        @include btn-shadow;
+        color: white;
+        font-size: 0.85em;
+        font-weight: bolder;
+        border: none;
+        border-radius: 25px;
+}
+
+.center-button{
+    text-align: center;
+}

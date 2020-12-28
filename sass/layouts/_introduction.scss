@@ -1,0 +1,14 @@
+.section-intro{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    
+}
+
+.section-intro__localise{
+        display: flex;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        background-color: silver;
+    }

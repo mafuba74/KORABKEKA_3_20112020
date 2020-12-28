@@ -1,6 +1,27 @@
-
+@mixin menu-shadow {
+    box-shadow: 0 0 7px 1px #c2bdc1;
+}
 
 @mixin btn-shadow {
     box-shadow: 0px 6px 9px -3px #353033;
 }
 
+
+
+@mixin delay {
+    @each $key, $value in $transition-delays {
+        &-#{$key}{
+            opacity: 1;
+            animation: 1s ease $value delay-display;
+            animation-fill-mode: backwards;
+        }
+    }
+}
+@keyframes delay-display{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

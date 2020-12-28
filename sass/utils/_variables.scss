@@ -8,3 +8,16 @@ $gradient1: linear-gradient(-190deg, $secondary-color, $primary-color);
 $shadows:(
     hover: 0 0 7px rgb(54, 52, 52)
 );
+
+$transition-delays: (
+    one: 0.25s,
+    two: 0.50s,
+    three: 0.75s,
+    four: 1s,
+    five: 1.25s,
+    six: 1.50s,
+    seven: 1.75s,
+    eight: 2s,
+    nine: 2.25s,
+    ten: 2.50s
+);

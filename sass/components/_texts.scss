@@ -1,0 +1,66 @@
+.section-intro__title{
+    /*==== titre de la 1ere section de la page d'acceuil "reservez le menu qui..." ====*/
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+
+.section-intro__describe{
+    /*===== paragraphe de la 1ere section "découvrez des restaurants..." ====*/
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+.describe__list__element{
+    /* ===== style des elements de la section fonctionnement ==== */
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    border:1px solid black;
+    border-radius: 20px;
+    
+}
+
+
+.restorants__title{
+    /*==== titre de la partie restaurants====*/
+    width: 90%;
+    margin: 20px auto;
+}
+
+.menu-section__title{
+    font-family: shrikhand;
+}
+
+.menu-compo__title{
+    font-weight: 150;
+    color: lighten($color: #000000, $amount: 25);
+}
+
+
+.footer__menu--link{
+    /* ====== liens du footer ===== */
+    text-decoration: none;
+    color: white;
+}
+
+.underline{
+    text-decoration: underline $tertiary-color 3px;
+    text-underline-offset: 7px;
+}
+
+
+.bold{
+    font-weight: bold;
+}
+
+.lighten{
+    color: lighten($color: #000000, $amount: 25);
+}

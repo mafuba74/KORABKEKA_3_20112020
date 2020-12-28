@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: roboto;
   src: url(./police/Roboto-Regular.ttf) format("truetype");
@@ -8,9 +9,376 @@
   src: url(./police/Shrikhand-Regular.ttf) format("truetype");
 }
 
+@-webkit-keyframes delay-display {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes delay-display {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.section-intro__localise__button {
+  /*==== bouton avec le logo map de la bannière localisation*/
+  border: none;
+  background-color: transparent;
+}
+
+.button--pink {
+  /*===== bouton rose dégradé =====*/
+  width: 200px;
+  height: 50px;
+  margin: 20px auto;
+  background: linear-gradient(-190deg, #FF79DA, #9356DC);
+  -webkit-box-shadow: 0px 6px 9px -3px #353033;
+          box-shadow: 0px 6px 9px -3px #353033;
+  color: white;
+  font-size: 0.85em;
+  font-weight: bolder;
+  border: none;
+  border-radius: 25px;
+}
+
+.center-button {
+  text-align: center;
+}
+
+.restorants__card--view--img img {
+  /*==== images des restorants card ==== */
+  display: block;
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.back-link {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  color: #404040;
+}
+
+.back-link:hover {
+  color: #9356DC;
+}
+
+.describe__list__element > i {
+  /* ===== logos de la section fonctionnement ===== */
+  padding: 0 30px;
+}
+
+.describe__list__element:last-child > i {
+  /*===== logo de l'échoppe de la liste fonctionnement ====*/
+  color: #9356DC;
+}
+
+.describe__list__element__order {
+  /*==== numéros de l'ordre des elements de la section fonctionnement==== */
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: -10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  color: white;
+  background-color: #9356DC;
+}
+
+.restorants__card--view--new {
+  /* ===== logo "Nouveau" des restorants cards ===== */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+  padding: 10px;
+  color: #1b6150;
+  border: #99E2D0;
+  border-radius: 5px;
+  background-color: #99E2D0;
+}
+
+.footer__logo {
+  /*===== logo "ohmyfood" du footer ===== */
+  margin-top: 0;
+  font-family: shrikhand;
+  font-weight: lighter;
+}
+
+.footer__menu__logo {
+  /*==== logo du menu footer ==== */
+  width: 20px;
+  padding-right: 10px;
+}
+
+.heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+}
+
+.heart:hover .heart-full {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  cursor: pointer;
+}
+
+.heart-full {
+  display: block;
+  position: absolute;
+  left: 6px;
+  background: linear-gradient(-190deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+.section-intro__title {
+  /*==== titre de la 1ere section de la page d'acceuil "reservez le menu qui..." ====*/
+  width: 60%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.section-intro__describe {
+  /*===== paragraphe de la 1ere section "découvrez des restaurants..." ====*/
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.describe__list__element {
+  /* ===== style des elements de la section fonctionnement ==== */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.restorants__title {
+  /*==== titre de la partie restaurants====*/
+  width: 90%;
+  margin: 20px auto;
+}
+
+.menu-section__title {
+  font-family: shrikhand;
+}
+
+.menu-compo__title {
+  font-weight: 150;
+  color: #404040;
+}
+
+.footer__menu--link {
+  /* ====== liens du footer ===== */
+  text-decoration: none;
+  color: white;
+}
+
+.underline {
+  -webkit-text-decoration: underline #99E2D0 3px;
+          text-decoration: underline #99E2D0 3px;
+  text-underline-offset: 7px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.lighten {
+  color: #404040;
+}
+
+.section-intro__localise__input-text {
+  /*==== zone input de la bannère de localisation "paris, belleville" ==== */
+  border: none;
+  margin-left: 15px;
+  background-color: transparent;
+}
+
+.loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-animation: display 0s ease-in 3s forwards;
+          animation: display 0s ease-in 3s forwards;
+}
+
+@-webkit-keyframes display {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: 0;
+    height: 0;
+  }
+}
+
+@keyframes display {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: 0;
+    height: 0;
+  }
+}
+
+.spiner {
+  position: fixed;
+  top: 300px;
+  border: none;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  -webkit-animation: spin 3s linear;
+          animation: spin 3s linear;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    width: 120px;
+    height: 120px;
+    border: 16px solid #f3f3f3;
+    /* Light grey */
+    border-top: 16px solid #3498db;
+    /* Blue */
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  99% {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+  }
+  100% {
+    width: 120px;
+    height: 120px;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    width: 120px;
+    height: 120px;
+    border: 16px solid #f3f3f3;
+    /* Light grey */
+    border-top: 16px solid #3498db;
+    /* Blue */
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  99% {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+  }
+  100% {
+    width: 120px;
+    height: 120px;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+  }
+}
+
 body {
   margin: 0 auto;
   font-family: roboto;
+  position: relative;
+}
+
+.body-one {
+  background-image: url(/images/restaurants/palette.jpg);
+  background-size: 100% 400px;
+  background-repeat: no-repeat;
+  background-position: top 100px left 50%;
+}
+
+.body-two {
+  background-image: url(/images/restaurants/note.jpg);
+  background-size: 100% 400px;
+  background-repeat: no-repeat;
+  background-position: top 100px left 50%;
+}
+
+.body-three {
+  background-image: url(/images/restaurants/francaise.jpg);
+  background-size: 100% 400px;
+  background-repeat: no-repeat;
+  background-position: top 100px left 50%;
+}
+
+.body-four {
+  background-image: url(/images/restaurants/delice.jpg);
+  background-size: 100% 400px;
+  background-repeat: no-repeat;
+  background-position: top 100px left 50%;
 }
 
 header {
@@ -25,6 +393,22 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   padding-bottom: 20px;
+}
+
+.header-menus {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 20px;
+  margin-bottom: 350px;
 }
 
 .section-intro {
@@ -52,45 +436,8 @@ header {
   background-color: silver;
 }
 
-.section-intro__localise__button {
-  border: none;
-  background-color: transparent;
-}
-
-.section-intro__localise__input-text {
-  border: none;
-  margin-left: 15px;
-  background-color: transparent;
-}
-
-.section-intro__title {
-  width: 60%;
-  margin: 20px auto;
-  text-align: center;
-}
-
-.section-intro__describe {
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 1.2em;
-}
-
-.section-intro__button-pink {
-  width: 200px;
-  height: 50px;
-  margin: 20px auto;
-  background: linear-gradient(-190deg, #FF79DA, #9356DC);
-  -webkit-box-shadow: 0px 6px 9px -3px #353033;
-          box-shadow: 0px 6px 9px -3px #353033;
-  color: white;
-  font-size: 0.85em;
-  font-weight: bolder;
-  border: none;
-  border-radius: 25px;
-}
-
 .describe {
+  /* ===== style de la section fonctionnement ===== */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,6 +450,7 @@ header {
 }
 
 .describe__list {
+  /* ===== style de la liste de 3 elements de la section fonctionnement ===== */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,29 +462,8 @@ header {
   list-style-type: none;
 }
 
-.describe__list__element {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 50px;
-  margin: 10px 0;
-  border: 1px solid black;
-  border-radius: 20px;
-}
-
-.describe__list__element > i {
-  padding: 0 30px;
-}
-
-.describe__list__element:last-child > i {
-  color: #9356DC;
-}
-
 .restorants {
+  /* ===== style de la section restaurants de la page d'acceuil ====== */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,17 +476,14 @@ header {
   background-color: whitesmoke;
 }
 
-.restorants__title {
-  width: 90%;
-  margin: 20px auto;
-}
-
 .restorants__list {
+  /* ===== agencement de la liste de restorants cards ====== */
   padding: 0;
   list-style-type: none;
 }
 
 .restorants__card {
+  /* ===== style des restorants cards ======*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,6 +505,7 @@ header {
 }
 
 .restorants__card--view {
+  /* ===== style de la partie image de la card ===== */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -189,38 +514,21 @@ header {
   padding: 0;
 }
 
-.restorants__card--view--img img {
-  display: block;
-  width: 100%;
-  height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.restorants__card--view--new {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 2;
-  padding: 10px;
-  color: #1b6150;
-  border: #99E2D0;
-  border-radius: 3px;
-  background-color: #99E2D0;
-}
-
 .restorants__card--info {
+  /* ===== style de la partie descriptive de la card ==== */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .restorants__card--info--text {
+  /* ===== style du bloc texte de la card ===== */
   width: 80%;
   padding-left: 20px;
 }
 
 .restorants__card--info--like {
+  /* ===== style du bloc contenant le logo like (coeur) de la card ==== */
   display: block;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -241,24 +549,215 @@ header {
   padding: 20px;
 }
 
-.footer__logo {
-  margin-top: 0;
-  font-family: shrikhand;
-  font-weight: lighter;
-}
-
 .footer__menu {
   list-style-type: none;
   padding: 0;
 }
 
-.footer__menu--link {
-  text-decoration: none;
-  color: white;
+.menu-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f3efef;
+  height: auto;
+  padding: 20px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
 }
 
-.footer__menu__logo {
-  width: 20px;
-  padding-right: 10px;
+.menu-section__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu-compo__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-compo__dish {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 100%;
+  height: 70px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 20px 0;
+  -webkit-box-shadow: 0 0 7px 1px #c2bdc1;
+          box-shadow: 0 0 7px 1px #c2bdc1;
+}
+
+.menu-compo__dish:hover .menu-compo__dish__name {
+  min-width: 60%;
+}
+
+.menu-compo__dish:hover .fa-check {
+  -webkit-transform: rotateZ(360deg);
+          transform: rotateZ(360deg);
+}
+
+.dish-one {
+  opacity: 1;
+  -webkit-animation: 1s ease 0.25s delay-display;
+          animation: 1s ease 0.25s delay-display;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.dish-two {
+  opacity: 1;
+  -webkit-animation: 1s ease 0.5s delay-display;
+          animation: 1s ease 0.5s delay-display;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.dish-three {
+  opacity: 1;
+  -webkit-animation: 1s ease 0.75s delay-display;
+          animation: 1s ease 0.75s delay-display;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.dish-four {
+  opacity: 1;
+  -webkit-animation: 1s ease 1s delay-display;
+          animation: 1s ease 1s delay-display;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.dish-five {
+  opacity: 1;
+  -webkit-animation: 1s ease 1.25s delay-display;
+          animation: 1s ease 1.25s delay-display;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.dish-six {
+  opacity: 1;
+  -webkit-animation: 1s ease 1.5s delay-display;
+          animation: 1s ease 1.5s delay-display;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.dish-seven {
+  opacity: 1;
+  -webkit-animation: 1s ease 1.75s delay-display;
+          animation: 1s ease 1.75s delay-display;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.dish-eight {
+  opacity: 1;
+  -webkit-animation: 1s ease 2s delay-display;
+          animation: 1s ease 2s delay-display;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.dish-nine {
+  opacity: 1;
+  -webkit-animation: 1s ease 2.25s delay-display;
+          animation: 1s ease 2.25s delay-display;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.dish-ten {
+  opacity: 1;
+  -webkit-animation: 1s ease 2.5s delay-display;
+          animation: 1s ease 2.5s delay-display;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.menu-compo__dish__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-width: 80%;
+  height: inherit;
+  padding: 10px;
+  background-color: white;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+.menu-compo__dish__name > p {
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 20%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  background-color: white;
+}
+
+.selected {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 20%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #99E2D0;
+}
+
+.fa-check {
+  padding: 10px;
+  border-radius: 50%;
+  color: #99E2D0;
+  background-color: white;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
 }
 /*# sourceMappingURL=ohmyfood.css.map */

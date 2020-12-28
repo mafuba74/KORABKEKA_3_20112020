@@ -1,0 +1,94 @@
+
+.back-link{
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    color: lighten($color: #000, $amount: 25%);
+    &:hover{
+        color: $primary-color;
+    }
+}
+
+.describe__list__element>i{
+    /* ===== logos de la section fonctionnement ===== */
+    padding: 0 30px;
+}
+
+
+.describe__list__element:last-child>i{
+    /*===== logo de l'échoppe de la liste fonctionnement ====*/
+    color: $primary-color;
+}
+
+.describe__list__element__order{
+    /*==== numéros de l'ordre des elements de la section fonctionnement==== */
+    display: inline-block;
+    display: flex;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: -10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    background-color: $primary-color;
+}
+
+
+.restorants__card--view--new{
+    /* ===== logo "Nouveau" des restorants cards ===== */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    padding: 10px;
+    color: $tertiary-dark;
+    border: $tertiary-color;
+    border-radius: 5px;
+    background-color:$tertiary-color;
+}
+
+
+.footer__logo{
+    /*===== logo "ohmyfood" du footer ===== */
+    margin-top: 0;
+    font-family: shrikhand;
+    font-weight: lighter;
+}
+
+.footer__menu__logo{
+    /*==== logo du menu footer ==== */
+    width: 20px;
+    padding-right: 10px;
+}
+
+.heart{
+    display:flex;
+    position: relative;
+    align-items: center;
+    margin-right: 30px;
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    &:hover .heart-full{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+}
+
+
+.heart-full{
+    display: block;
+    position: absolute;
+    left: 6px;
+    background: $gradient1;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(0);
+    transition-property: all;
+    transition-duration: 300ms;
+}
+
+
