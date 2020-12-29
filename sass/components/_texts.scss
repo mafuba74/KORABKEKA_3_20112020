@@ -25,6 +25,12 @@
     margin: 10px 0;
     border:1px solid black;
     border-radius: 20px;
+    @media all and (min-width: 500px){
+        width: 70%;
+    }
+    @media all and (min-width: 766px){
+        width: 30%;
+    }
     
 }
 
@@ -33,6 +39,9 @@
     /*==== titre de la partie restaurants====*/
     width: 90%;
     margin: 20px auto;
+    @media all and (min-width: 766px){
+        margin: 20px auto 0 auto;
+    }
 }
 
 .menu-section__title{

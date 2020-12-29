@@ -6,13 +6,18 @@
     flex-direction: column;
     width: 90%;
     margin: auto;
-
-
+    &__title{
+        margin-bottom: 0;
+    }
     &__list{
         /* ===== style de la liste de 3 elements de la section fonctionnement ===== */
         display: flex;
         flex-direction: column;
         padding: 0;
-        list-style-type: none;   
+        list-style-type: none; 
+        @media all and (min-width: 766px){
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 }

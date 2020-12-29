@@ -196,10 +196,28 @@
   border-radius: 20px;
 }
 
+@media all and (min-width: 500px) {
+  .describe__list__element {
+    width: 70%;
+  }
+}
+
+@media all and (min-width: 766px) {
+  .describe__list__element {
+    width: 30%;
+  }
+}
+
 .restorants__title {
   /*==== titre de la partie restaurants====*/
   width: 90%;
   margin: 20px auto;
+}
+
+@media all and (min-width: 766px) {
+  .restorants__title {
+    margin: 20px auto 0 auto;
+  }
 }
 
 .menu-section__title {
@@ -420,6 +438,7 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: whitesmoke;
+  margin-bottom: 30px;
 }
 
 .section-intro__localise {
@@ -449,6 +468,10 @@ header {
   margin: auto;
 }
 
+.describe__title {
+  margin-bottom: 0;
+}
+
 .describe__list {
   /* ===== style de la liste de 3 elements de la section fonctionnement ===== */
   display: -webkit-box;
@@ -460,6 +483,18 @@ header {
           flex-direction: column;
   padding: 0;
   list-style-type: none;
+}
+
+@media all and (min-width: 766px) {
+  .describe__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .restorants {
@@ -476,10 +511,32 @@ header {
   background-color: whitesmoke;
 }
 
+@media all and (min-width: 766px) {
+  .restorants {
+    width: 100%;
+    margin: auto;
+  }
+}
+
 .restorants__list {
   /* ===== agencement de la liste de restorants cards ====== */
   padding: 0;
   list-style-type: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media all and (min-width: 766px) {
+  .restorants__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+  }
 }
 
 .restorants__card {
@@ -497,7 +554,25 @@ header {
   border-radius: 20px;
   -webkit-box-shadow: 0 0 18px 3px #D2CDD3;
           box-shadow: 0 0 18px 3px #D2CDD3;
-  margin: 30px auto;
+  margin: 30px 0;
+}
+
+@media all and (max-width: 765px) {
+  .restorants__card {
+    margin: 30px auto;
+  }
+}
+
+@media all and (min-width: 766px) {
+  .restorants__card {
+    width: 45%;
+  }
+}
+
+@media all and (min-width: 1025px) {
+  .restorants__card {
+    width: 22%;
+  }
 }
 
 .restorants__card figure {
