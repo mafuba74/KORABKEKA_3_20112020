@@ -50,6 +50,7 @@
   font-weight: bolder;
   border: none;
   border-radius: 25px;
+  cursor: pointer;
 }
 
 .center-button {
