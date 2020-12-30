@@ -209,6 +209,7 @@
 }
 
 .describe__list__element:hover {
+  cursor: pointer;
   background-color: #f7e7e6;
 }
 

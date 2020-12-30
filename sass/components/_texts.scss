@@ -32,6 +32,7 @@
         color: lighten($color: #000000, $amount: 60);
     }
     &:hover{
+        cursor: pointer;
         background-color: rgb(247, 231, 230);
         &>i{
             color: $primary-color;
