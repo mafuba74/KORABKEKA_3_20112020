@@ -28,11 +28,12 @@
     font-weight: bolder;
     background-color:whitesmoke;
     box-shadow: 0 2px 9px 2px #D2CDD3;
+    cursor: pointer;
     &>i{
         color: lighten($color: #000000, $amount: 60);
     }
     &:hover{
-        cursor: pointer;
+        
         background-color: rgb(247, 231, 230);
         &>i{
             color: $primary-color;
