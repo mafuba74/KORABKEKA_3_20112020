@@ -1,7 +1,7 @@
 .menu-section{
     display: flex;
     flex-direction: column;
-    background-color: rgb(243, 239, 239);
+    background-color: whitesmoke;
     height: auto;
     padding: 20px;
     border-top-left-radius: 50px;
@@ -17,22 +17,51 @@
 .menu-compo__list{
     list-style-type: none;
     padding: 0;
+    @media all and (min-width:765px){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
 
 .menu-compo__dish{
     display:flex;
+    position: relative;
     box-sizing: border-box;
-    max-width: 100%;
-    height: 70px;
+    width: 100%;
+    background-color: white;
     border-radius: 20px;
     overflow: hidden;
     margin: 20px 0;
     @include menu-shadow;
+    
+    @media all and (min-width:765px){
+        flex-wrap: wrap;
+        width: 48%;
+        &:hover>.selected{
+            background-color: $tertiary-color;
+        }
+        &:hover>.price{
+            min-width: 20%;
+        }
+    }
+    @media all and (min-width: 1025px){
+        width: 30%;
+    }
+    &:hover{
+        cursor: pointer;
+    }
     &:hover .menu-compo__dish__name{
         min-width: 60%;
+        @media all and (min-width: 765px){
+            min-width: 100%;
+        }
     }
     &:hover .fa-check{
         transform: rotateZ(360deg);
+        @media all and (min-width:765px){
+            color: $tertiary-color;
+        }
     }
     
 
@@ -59,7 +88,9 @@
 	    white-space: nowrap;
 	    text-overflow: ellipsis;
     }
-    
+    @media all and (min-width:765px){
+        min-width: 100%;
+    }
 }
 
 .price{
@@ -70,6 +101,12 @@
     box-sizing: border-box;
     padding: 10px;
     background-color: white;
+    transition-property: all;
+    transition-duration: 500ms;
+    @media all and (min-width:765px){
+        justify-content: flex-start;
+        min-width: 80%;
+    }
 }
 
 .selected{
@@ -79,6 +116,11 @@
     align-items: center;
     justify-content: center;
     background-color: $tertiary-color;
+    transition-property: all;
+    transition-duration: 500ms;
+    @media all and (min-width:765px){
+        background-color: whitesmoke;
+    }
 }
 
 .fa-check{
@@ -88,4 +130,7 @@
     background-color: white;
     transition-property: all;
     transition-duration: 500ms;
+    @media all and (min-width:765px){
+        color: whitesmoke;
+    }
 }

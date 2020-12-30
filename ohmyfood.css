@@ -57,6 +57,10 @@
   text-align: center;
 }
 
+.center-button > .button--pink {
+  margin-bottom: 60px;
+}
+
 .restorants__card--view--img img {
   /*==== images des restorants card ==== */
   display: block;
@@ -259,10 +263,12 @@
 
 .bold {
   font-weight: bold;
+  font-size: 1.2em;
 }
 
 .lighten {
   color: #404040;
+  font-size: 1.2em;
 }
 
 .section-intro__localise__input-text {
@@ -394,6 +400,7 @@ body {
   background-size: 100% 400px;
   background-repeat: no-repeat;
   background-position: top 100px left 50%;
+  max-width: 1400px;
 }
 
 .body-two {
@@ -401,6 +408,7 @@ body {
   background-size: 100% 400px;
   background-repeat: no-repeat;
   background-position: top 100px left 50%;
+  max-width: 1400px;
 }
 
 .body-three {
@@ -408,6 +416,7 @@ body {
   background-size: 100% 400px;
   background-repeat: no-repeat;
   background-position: top 100px left 50%;
+  max-width: 1400px;
 }
 
 .body-four {
@@ -415,6 +424,7 @@ body {
   background-size: 100% 400px;
   background-repeat: no-repeat;
   background-position: top 100px left 50%;
+  max-width: 1400px;
 }
 
 header {
@@ -475,7 +485,7 @@ header {
 }
 
 .section-intro__localise__element {
-  padding-left: 50px;
+  padding-left: 70px;
 }
 
 .describe {
@@ -666,7 +676,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #f3efef;
+  background-color: whitesmoke;
   height: auto;
   padding: 20px;
   border-top-left-radius: 50px;
@@ -687,14 +697,28 @@ header {
   padding: 0;
 }
 
+@media all and (min-width: 765px) {
+  .menu-compo__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .menu-compo__dish {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  max-width: 100%;
-  height: 70px;
+  width: 100%;
+  background-color: white;
   border-radius: 20px;
   overflow: hidden;
   margin: 20px 0;
@@ -702,13 +726,49 @@ header {
           box-shadow: 0 0 7px 1px #c2bdc1;
 }
 
+@media all and (min-width: 765px) {
+  .menu-compo__dish {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 48%;
+  }
+  .menu-compo__dish:hover > .selected {
+    background-color: #99E2D0;
+  }
+  .menu-compo__dish:hover > .price {
+    min-width: 20%;
+  }
+}
+
+@media all and (min-width: 1025px) {
+  .menu-compo__dish {
+    width: 30%;
+  }
+}
+
+.menu-compo__dish:hover {
+  cursor: pointer;
+}
+
 .menu-compo__dish:hover .menu-compo__dish__name {
   min-width: 60%;
+}
+
+@media all and (min-width: 765px) {
+  .menu-compo__dish:hover .menu-compo__dish__name {
+    min-width: 100%;
+  }
 }
 
 .menu-compo__dish:hover .fa-check {
   -webkit-transform: rotateZ(360deg);
           transform: rotateZ(360deg);
+}
+
+@media all and (min-width: 765px) {
+  .menu-compo__dish:hover .fa-check {
+    color: #99E2D0;
+  }
 }
 
 .dish-one {
@@ -821,6 +881,12 @@ header {
   text-overflow: ellipsis;
 }
 
+@media all and (min-width: 765px) {
+  .menu-compo__dish__name {
+    min-width: 100%;
+  }
+}
+
 .price {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -836,6 +902,19 @@ header {
           box-sizing: border-box;
   padding: 10px;
   background-color: white;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+@media all and (min-width: 765px) {
+  .price {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    min-width: 80%;
+  }
 }
 
 .selected {
@@ -852,6 +931,16 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #99E2D0;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+@media all and (min-width: 765px) {
+  .selected {
+    background-color: whitesmoke;
+  }
 }
 
 .fa-check {
@@ -863,5 +952,11 @@ header {
   transition-property: all;
   -webkit-transition-duration: 500ms;
           transition-duration: 500ms;
+}
+
+@media all and (min-width: 765px) {
+  .fa-check {
+    color: whitesmoke;
+  }
 }
 /*# sourceMappingURL=ohmyfood.css.map */

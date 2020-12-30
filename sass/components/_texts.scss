@@ -80,8 +80,10 @@
 
 .bold{
     font-weight: bold;
+    font-size: 1.2em;
 }
 
 .lighten{
     color: lighten($color: #000000, $amount: 25);
+    font-size: 1.2em;
 }

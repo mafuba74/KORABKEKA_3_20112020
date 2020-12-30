@@ -24,4 +24,7 @@
 
 .center-button{
     text-align: center;
+    &>.button--pink{
+        margin-bottom: 60px;
+    }
 }
