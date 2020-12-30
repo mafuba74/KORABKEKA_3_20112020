@@ -33,6 +33,10 @@
   background-color: transparent;
 }
 
+.section-intro > .button--pink {
+  margin: 20px auto 60px auto;
+}
+
 .button--pink {
   /*===== bouton rose dégradé =====*/
   width: 200px;
@@ -75,11 +79,6 @@
 .describe__list__element > i {
   /* ===== logos de la section fonctionnement ===== */
   padding: 0 30px;
-}
-
-.describe__list__element:last-child > i {
-  /*===== logo de l'échoppe de la liste fonctionnement ====*/
-  color: #9356DC;
 }
 
 .describe__list__element__order {
@@ -192,8 +191,24 @@
   width: 100%;
   height: 50px;
   margin: 10px 0;
-  border: 1px solid black;
-  border-radius: 20px;
+  border-radius: 12px;
+  font-size: 1.2em;
+  font-weight: bolder;
+  background-color: whitesmoke;
+  -webkit-box-shadow: 0 2px 9px 2px #D2CDD3;
+          box-shadow: 0 2px 9px 2px #D2CDD3;
+}
+
+.describe__list__element > i {
+  color: #999999;
+}
+
+.describe__list__element:hover {
+  background-color: #f7e7e6;
+}
+
+.describe__list__element:hover > i {
+  color: #9356DC;
 }
 
 @media all and (min-width: 500px) {
@@ -211,7 +226,7 @@
 .restorants__title {
   /*==== titre de la partie restaurants====*/
   width: 90%;
-  margin: 20px auto;
+  margin: 20px auto 0;
 }
 
 @media all and (min-width: 766px) {
@@ -254,6 +269,8 @@
   border: none;
   margin-left: 15px;
   background-color: transparent;
+  font-size: 1.1em;
+  font-weight: 600;
 }
 
 .loader {
@@ -452,7 +469,12 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: silver;
+  padding: 0;
+  background-color: gainsboro;
+}
+
+.section-intro__localise__element {
+  padding-left: 50px;
 }
 
 .describe {
@@ -482,6 +504,7 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0;
+  margin-bottom: 60px;
   list-style-type: none;
 }
 
@@ -525,6 +548,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0;
 }
 
 @media all and (min-width: 766px) {
@@ -627,6 +651,10 @@ header {
 .footer__menu {
   list-style-type: none;
   padding: 0;
+}
+
+.footer__menu > li {
+  line-height: 25px;
 }
 
 .menu-section {

@@ -23,8 +23,20 @@
     width: 100%;
     height: 50px;
     margin: 10px 0;
-    border:1px solid black;
-    border-radius: 20px;
+    border-radius: 12px;
+    font-size: 1.2em;
+    font-weight: bolder;
+    background-color:whitesmoke;
+    box-shadow: 0 2px 9px 2px #D2CDD3;
+    &>i{
+        color: lighten($color: #000000, $amount: 60);
+    }
+    &:hover{
+        background-color: rgb(247, 231, 230);
+        &>i{
+            color: $primary-color;
+        }
+    }
     @media all and (min-width: 500px){
         width: 70%;
     }
@@ -38,7 +50,7 @@
 .restorants__title{
     /*==== titre de la partie restaurants====*/
     width: 90%;
-    margin: 20px auto;
+    margin: 20px auto 0;
     @media all and (min-width: 766px){
         margin: 20px auto 0 auto;
     }
