@@ -75,8 +75,8 @@
 }
 
 .underline{
-    text-decoration: underline $tertiary-color 3px;
-    text-underline-offset: 7px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid $tertiary-color;
 }
 
 
