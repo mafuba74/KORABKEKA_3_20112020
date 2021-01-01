@@ -956,8 +956,8 @@ header {
 @media all and (min-width: 765px) {
   .fa-check {
     color: gainsboro;
-    -webkit-transition-duration: 750ms;
-            transition-duration: 750ms;
+    -webkit-transition-duration: 760ms;
+            transition-duration: 760ms;
   }
 }
 /*# sourceMappingURL=ohmyfood.css.map */
