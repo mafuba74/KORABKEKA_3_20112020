@@ -938,7 +938,7 @@ header {
 
 @media all and (min-width: 765px) {
   .selected {
-    background-color: whitesmoke;
+    background-color: gainsboro;
   }
 }
 
@@ -955,7 +955,9 @@ header {
 
 @media all and (min-width: 765px) {
   .fa-check {
-    color: whitesmoke;
+    color: gainsboro;
+    -webkit-transition-duration: 750ms;
+            transition-duration: 750ms;
   }
 }
 /*# sourceMappingURL=ohmyfood.css.map */

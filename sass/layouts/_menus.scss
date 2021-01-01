@@ -119,7 +119,7 @@
     transition-property: all;
     transition-duration: 500ms;
     @media all and (min-width:765px){
-        background-color: whitesmoke;
+        background-color: darken($color: whitesmoke, $amount: 10);
     }
 }
 
@@ -131,6 +131,7 @@
     transition-property: all;
     transition-duration: 500ms;
     @media all and (min-width:765px){
-        color: whitesmoke;
+        color: darken($color: whitesmoke, $amount: 10);
+        transition-duration: 750ms;
     }
 }
