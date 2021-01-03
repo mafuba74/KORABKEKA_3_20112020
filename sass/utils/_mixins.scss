@@ -25,3 +25,21 @@
         opacity: 1;
     }
 }
+
+
+@mixin bg-img {
+    @each $key, $value in $bg-img {
+        &__#{$key}{
+            width: 100%;
+            max-width: 1400px;
+            height: 400px;
+            background-image: $value;
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            @media all and (min-width: 600px){
+                background-size: 100% auto;
+            }
+        }
+    }
+}

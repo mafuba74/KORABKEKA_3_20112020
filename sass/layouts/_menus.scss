@@ -4,6 +4,7 @@
     background-color: whitesmoke;
     height: auto;
     padding: 20px;
+    margin-top: -70px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
 }
@@ -36,7 +37,6 @@
     @include menu-shadow;
     
     @media all and (min-width:765px){
-        flex-wrap: wrap;
         width: 48%;
         &:hover>.selected{
             background-color: $tertiary-color;
@@ -53,15 +53,9 @@
     }
     &:hover .menu-compo__dish__name{
         min-width: 60%;
-        @media all and (min-width: 765px){
-            min-width: 100%;
-        }
     }
     &:hover .fa-check{
         transform: rotateZ(360deg);
-        @media all and (min-width:765px){
-            color: $tertiary-color;
-        }
     }
     
 
@@ -88,9 +82,6 @@
 	    white-space: nowrap;
 	    text-overflow: ellipsis;
     }
-    @media all and (min-width:765px){
-        min-width: 100%;
-    }
 }
 
 .price{
@@ -103,10 +94,6 @@
     background-color: white;
     transition-property: all;
     transition-duration: 500ms;
-    @media all and (min-width:765px){
-        justify-content: flex-start;
-        min-width: 80%;
-    }
 }
 
 .selected{
@@ -118,9 +105,6 @@
     background-color: $tertiary-color;
     transition-property: all;
     transition-duration: 500ms;
-    @media all and (min-width:765px){
-        background-color: darken($color: whitesmoke, $amount: 10);
-    }
 }
 
 .fa-check{
@@ -130,8 +114,4 @@
     background-color: white;
     transition-property: all;
     transition-duration: 500ms;
-    @media all and (min-width:765px){
-        color: darken($color: whitesmoke, $amount: 10);
-        transition-duration: 760ms;
-    }
 }

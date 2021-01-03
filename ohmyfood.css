@@ -70,6 +70,70 @@
      object-fit: cover;
 }
 
+.bg-img__one {
+  width: 100%;
+  max-width: 1400px;
+  height: 400px;
+  background-image: url("./images/restaurants/palette.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media all and (min-width: 600px) {
+  .bg-img__one {
+    background-size: 100% auto;
+  }
+}
+
+.bg-img__two {
+  width: 100%;
+  max-width: 1400px;
+  height: 400px;
+  background-image: url("./images/restaurants/note.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media all and (min-width: 600px) {
+  .bg-img__two {
+    background-size: 100% auto;
+  }
+}
+
+.bg-img__three {
+  width: 100%;
+  max-width: 1400px;
+  height: 400px;
+  background-image: url("./images/restaurants/francaise.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media all and (min-width: 600px) {
+  .bg-img__three {
+    background-size: 100% auto;
+  }
+}
+
+.bg-img__four {
+  width: 100%;
+  max-width: 1400px;
+  height: 400px;
+  background-image: url("./images/restaurants/delice.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media all and (min-width: 600px) {
+  .bg-img__four {
+    background-size: 100% auto;
+  }
+}
+
 .back-link {
   position: absolute;
   top: 50%;
@@ -390,40 +454,9 @@
 
 body {
   margin: 0 auto;
+  max-width: 1400px;
   font-family: roboto;
   position: relative;
-}
-
-.body-one {
-  background-image: url("./images/restaurants/palette.jpg");
-  background-size: 100% 400px;
-  background-repeat: no-repeat;
-  background-position: top 100px left 50%;
-  max-width: 1400px;
-}
-
-.body-two {
-  background-image: url("./images/restaurants/note.jpg");
-  background-size: 100% 400px;
-  background-repeat: no-repeat;
-  background-position: top 100px left 50%;
-  max-width: 1400px;
-}
-
-.body-three {
-  background-image: url("./images/restaurants/francaise.jpg");
-  background-size: 100% 400px;
-  background-repeat: no-repeat;
-  background-position: top 100px left 50%;
-  max-width: 1400px;
-}
-
-.body-four {
-  background-image: url("./images/restaurants/delice.jpg");
-  background-size: 100% 400px;
-  background-repeat: no-repeat;
-  background-position: top 100px left 50%;
-  max-width: 1400px;
 }
 
 header {
@@ -453,7 +486,6 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   padding-bottom: 20px;
-  margin-bottom: 350px;
 }
 
 .section-intro {
@@ -678,6 +710,7 @@ header {
   background-color: whitesmoke;
   height: auto;
   padding: 20px;
+  margin-top: -70px;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
 }
@@ -727,8 +760,6 @@ header {
 
 @media all and (min-width: 765px) {
   .menu-compo__dish {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     width: 48%;
   }
   .menu-compo__dish:hover > .selected {
@@ -753,21 +784,9 @@ header {
   min-width: 60%;
 }
 
-@media all and (min-width: 765px) {
-  .menu-compo__dish:hover .menu-compo__dish__name {
-    min-width: 100%;
-  }
-}
-
 .menu-compo__dish:hover .fa-check {
   -webkit-transform: rotateZ(360deg);
           transform: rotateZ(360deg);
-}
-
-@media all and (min-width: 765px) {
-  .menu-compo__dish:hover .fa-check {
-    color: #99E2D0;
-  }
 }
 
 .dish-one {
@@ -880,12 +899,6 @@ header {
   text-overflow: ellipsis;
 }
 
-@media all and (min-width: 765px) {
-  .menu-compo__dish__name {
-    min-width: 100%;
-  }
-}
-
 .price {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -905,15 +918,6 @@ header {
   transition-property: all;
   -webkit-transition-duration: 500ms;
           transition-duration: 500ms;
-}
-
-@media all and (min-width: 765px) {
-  .price {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    min-width: 80%;
-  }
 }
 
 .selected {
@@ -936,12 +940,6 @@ header {
           transition-duration: 500ms;
 }
 
-@media all and (min-width: 765px) {
-  .selected {
-    background-color: gainsboro;
-  }
-}
-
 .fa-check {
   padding: 10px;
   border-radius: 50%;
@@ -951,13 +949,5 @@ header {
   transition-property: all;
   -webkit-transition-duration: 500ms;
           transition-duration: 500ms;
-}
-
-@media all and (min-width: 765px) {
-  .fa-check {
-    color: gainsboro;
-    -webkit-transition-duration: 760ms;
-            transition-duration: 760ms;
-  }
 }
 /*# sourceMappingURL=ohmyfood.css.map */
