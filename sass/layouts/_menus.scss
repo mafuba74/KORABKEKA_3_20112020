@@ -38,6 +38,7 @@
     
     @media all and (min-width:765px){
         width: 48%;
+        height: 90px;
         &:hover>.selected{
             background-color: $tertiary-color;
         }
@@ -47,6 +48,7 @@
     }
     @media all and (min-width: 1025px){
         width: 30%;
+        
     }
     &:hover{
         cursor: pointer;

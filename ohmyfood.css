@@ -761,6 +761,7 @@ header {
 @media all and (min-width: 765px) {
   .menu-compo__dish {
     width: 48%;
+    height: 90px;
   }
   .menu-compo__dish:hover > .selected {
     background-color: #99E2D0;
