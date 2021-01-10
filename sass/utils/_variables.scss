@@ -1,9 +1,13 @@
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
+
+$primary-lignt: lighten($color: $primary-color, $amount:5%);
+$secondary-light: lighten($color: $secondary-color, $amount:5%);
 $tertiary-dark: darken($color: $tertiary-color, $amount: 50%);
 
 $gradient1: linear-gradient(-190deg, $secondary-color, $primary-color);
+$gradient2: linear-gradient(-190deg, $secondary-light, $primary-lignt);
 
 $shadows:(
     hover: 0 0 7px rgb(54, 52, 52)

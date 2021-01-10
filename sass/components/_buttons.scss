@@ -10,16 +10,20 @@
 .button--pink{
     /*===== bouton rose dégradé =====*/
     width: 200px;
-        height: 50px;
-        margin: 20px auto;
-        background: $gradient1;
-        @include btn-shadow;
-        color: white;
-        font-size: 0.85em;
-        font-weight: bolder;
-        border: none;
-        border-radius: 25px;
-        cursor: pointer;
+    height: 50px;
+    margin: 20px auto;
+    background: $gradient1;
+    @include btn-shadow;
+    color: white;
+    font-size: 0.85em;
+    font-weight: bolder;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    &:hover{
+        background: $gradient2;
+        box-shadow: 0px 6px 15px 0px #353033;
+    }
 }
 
 .center-button{

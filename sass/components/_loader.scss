@@ -37,11 +37,18 @@
         width: 120px;
         height: 120px;
         border: 16px solid #f3f3f3; /* Light grey */
-        border-top: 16px solid #3498db; /* Blue */
+        border-top: 16px solid $secondary-color;
         transform: rotate(0deg); 
     }
+    25%{
+        border-top: 16px solid $primary-color;
+    }
     50%{
+        border-top: 16px solid $secondary-color;
         transform: rotate(360deg);
+    }
+    75%{
+        border-top: 16px solid $primary-color;
     }
     99%{
         transform: rotate(720deg);
@@ -50,7 +57,7 @@
         width: 120px;
         height: 120px;
         border: 16px solid #f3f3f3;
-        border-top: 16px solid #3498db;
+        border-top: 16px solid $secondary-color;
         transform: rotate(720deg); 
     }
 }
